@@ -5,9 +5,9 @@ all:
 	$(CC) $(LDFLAGS) $(CFLAGS) $(SOURCES) -o $(EXECUTABLE)
 
 clean:
-	rm  *.o
+	rm  $(EXECUTABLE)
 
 cleanall:
-	rm  *.o $(EXECUTABLE)
+	rm  $(EXECUTABLE)
 
 rebuild: cleanall all
